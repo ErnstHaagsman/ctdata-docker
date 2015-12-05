@@ -2,6 +2,11 @@ rabbitmq:
   image: rabbitmq:3-management
 mysql: 
   image: mysql:5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: donotuse
+    MYSQL_DATABASE: ctdata
+    MYSQL_USER: ctdata
+    MYSQL_PASSWORD: use_this_password
 raspnode:
   build: ./raspnodesim/
 sensorgateway:
@@ -9,3 +14,12 @@ sensorgateway:
   links:
   - rabbitmq
   - raspnode
+orchestrator:
+  build: ./orchestrator/
+  links:
+  - rabbitmq
+datanode:
+  build: ./datanode/
+  links:
+  - mysql
+  - rabbitmq

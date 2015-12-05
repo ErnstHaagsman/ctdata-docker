@@ -4,5 +4,6 @@ ADD * /app/
 
 WORKDIR /app/
 
-# CMD ["java", "-jar", "SensorGateway.jar", "-config", "config.json"]
+EXPOSE 8080
+
 CMD ["./start_after_wait.sh"]

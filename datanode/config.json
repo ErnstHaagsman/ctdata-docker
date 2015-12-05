@@ -1,0 +1,8 @@
+{
+	"databasehost" : "mysql",
+	"databaseport": "3306",
+	"databaseuser": "ctdata",
+	"databasepassword": "use_this_password",
+	"databaseschema": "ctdata",
+	"rabbitMqUrl" : "amqp://rabbitmq"
+}

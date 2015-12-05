@@ -1,8 +1,9 @@
 FROM java:7
 
+RUN apt-get update && apt-get install -y mysql-client
+
 ADD * /app/
 
 WORKDIR /app/
 
-# CMD ["java", "-jar", "SensorGateway.jar", "-config", "config.json"]
 CMD ["./start_after_wait.sh"]
