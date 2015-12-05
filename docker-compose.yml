@@ -23,3 +23,9 @@ datanode:
   links:
   - mysql
   - rabbitmq
+webapp:
+  build: ./webapp/
+  links:
+  - rabbitmq
+  ports:
+  - "8080:8080"
