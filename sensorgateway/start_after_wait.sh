@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sleep 5
+sleep 15
 java -jar SensorGateway.jar -config config.json

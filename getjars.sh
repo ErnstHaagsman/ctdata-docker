@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -N -O jars.zip https://s3-us-west-1.amazonaws.com/ctdata-builds/build/jars.zip
+wget -N -O jars.zip https://s3-us-west-1.amazonaws.com/ctdata-builds/build/$1.zip
 unzip -o jars.zip
 
 mv jars/CtdataSensorGateway-*.jar ./sensorgateway/SensorGateway.jar
