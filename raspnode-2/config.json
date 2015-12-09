@@ -1,0 +1,51 @@
+{
+  "nodeUUID": "02a8018b-e729-4b9c-8119-52609f01907d",
+  "websocketPort": 8765,
+  "connectedSensors": [
+    {
+      "sensorType": "net.ctdata.raspnodesim.sensors.RandomZeroHundredSensor",
+      "pollingInterval": 5000,
+      "number": 1,
+      "latitude": 37.422808,
+      "longitude":  -122.161482,
+      "name": "Random Stanford Sensor",
+      "type": "rainfall"
+    },
+    {
+      "sensorType": "net.ctdata.raspnodesim.sensors.RandomZeroHundredSensor",
+      "pollingInterval": 3000,
+      "number": 2,
+      "latitude": 37.423457,
+      "longitude": -122.078235,
+      "name": "Random Shoreline Sensor",
+      "type": "rainfall"
+    },
+    {
+      "sensorType": "net.ctdata.raspnodesim.sensors.RandomZeroHundredSensor",
+      "pollingInterval": 4000,
+      "number": 3,
+      "latitude": 37.420835,
+      "longitude": -122.082054,
+      "name": "Random Googleplex Sensor",
+      "type": "rainfall"
+    },
+    {
+      "sensorType": "net.ctdata.raspnodesim.sensors.RandomZeroHundredSensor",
+      "pollingInterval": 6000,
+      "number": 4,
+      "latitude": 37.399792,
+      "longitude": -122.110697,
+      "name": "Random Walmart Sensor",
+      "type": "rainfall"
+    },
+    {
+      "sensorType": "net.ctdata.raspnodesim.sensors.RandomZeroHundredSensor",
+      "pollingInterval": 5000,
+      "number": 5,
+      "latitude": 37.394361,
+      "longitude": -122.044644,
+      "name": "Random Golf Course Sensor",
+      "type": "rainfall"
+    }
+  ]
+}

@@ -7,13 +7,16 @@ mysql:
     MYSQL_DATABASE: ctdata
     MYSQL_USER: ctdata
     MYSQL_PASSWORD: use_this_password
-raspnode:
-  build: ./raspnodesim/
+raspnodea:
+  build: ./raspnode-1/
+raspnodeb:
+  build: ./raspnode-2/
 sensorgateway:
   build: ./sensorgateway/
   links:
   - rabbitmq
-  - raspnode
+  - raspnodea
+  - raspnodeb
 orchestrator:
   build: ./orchestrator/
   links:
